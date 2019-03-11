@@ -1,0 +1,32 @@
+.header {
+    text-align: right;
+    color: #BFC5D2;
+    padding-right: 50px;
+    line-height: 64px !important;
+}
+.header .ant-menu-item-selected, .header .ant-menu-item-active{
+    border-bottom: 2px solid transparent !important
+}
+.ant-menu-item {
+    padding-left: 10px;
+    padding-right: 5px;
+
+}
+
+.sider {
+    border-right: 1px solid #e8e8e8;
+}
+.sider .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 26px;
+    cursor: pointer;
+    transition: color .3s;
+    padding-bottom: 50px;
+    padding-top: 10px;
+  }
+  
+  .sider .trigger:hover {
+    color: #1890ff;
+  }
+  
