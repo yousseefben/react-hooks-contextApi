@@ -1,0 +1,14 @@
+.due code {
+    background-color: rgba(232, 74, 80, .2);
+    color: #E84A50;
+    float: right;
+    opacity: 15%;
+    border: none !important;
+    /* line-height: 2.3; */
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+.check-rem {
+    padding-top: 5px
+}

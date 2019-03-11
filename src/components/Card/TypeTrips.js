@@ -1,58 +1,91 @@
 import React from 'react';
 import { Col, Row, Card, Avatar } from 'antd';
 import { Typography } from 'antd';
-
-
+import {
+    G2,
+    Chart,
+    Geom,
+    Axis,
+    Tooltip,
+    Coord,
+    Label,
+    Legend,
+    View,
+    Guide,
+    Shape,
+    Facet,
+    Util
+  } from "bizcharts";
+import DataSet from "@antv/data-set";
 const { Text } = Typography;
+  const data = [
+    {
+      name: "Comfort",
+    //   "Jan.": 18.9,
+    //   "Feb.": 28.8,
+    //   "Mar.": 39.3,
+      "Apr.": 81.4,
+      May: 47,
+      "Jun.": 20.3,
+    //   "Jul.": 24,
+    //   "Aug.": 35.6
+    },
+    {
+      name: "Premium",
+    //   "Jan.": 12.4,
+    //   "Feb.": 23.2,
+    //   "Mar.": 34.5,
+      "Apr.": 99.7,
+      May: 52.6,
+      "Jun.": 35.5,
+    //   "Jul.": 37.4,
+    //   "Aug.": 42.4
+    }
+  ];
+  const ds = new DataSet();
+  const dv = ds.createView().source(data);
+  dv.transform({
+    type: "fold",
+    fields: ["Apr.", "May", "Jun."],
+    key: "月份",
+    value: "月均降雨量"
+  });
 
-const TopDriver = (props) =>{
+
+const TypeTrips = (props) =>{
 
     return (
-        <Card>
+        <Card style={{paddingBottom: 10}}>
             <Row style={{paddingBottom: 25}}>
-                <Text type="secondary">Top Drivers</Text>
+                <Text type="secondary">Trips By Types</Text>
             </Row>
             <Row style={{paddingBottom: 15}}>
-                <Col span={4}>      
-                    <Avatar size="large" icon="user" />
-                </Col>
-                <Col span={13}>
-                    <Text strong>Bepop</Text> <br/>
-                    <Text type="secondary">Volvo intellisafe</Text>
-                </Col>
-                <Col span={7} style={{textAlign: 'right'}}>
-                    <Text strong>$6,432</Text> <br/>
-                    <Text type="secondary">1,232 miles</Text>
-                </Col>
-            </Row>
-            <Row style={{paddingBottom: 15}}>
-                <Col span={4}>      
-                    <Avatar size="large" icon="user" />
-                </Col>
-                <Col span={13}>
-                    <Text strong>Bepop</Text> <br/>
-                    <Text type="secondary">Volvo intellisafe</Text>
-                </Col>
-                <Col span={7} style={{textAlign: 'right'}}>
-                    <Text strong>$6,432</Text> <br/>
-                    <Text type="secondary">1,232 miles</Text>
-                </Col>
-            </Row>
-            <Row style={{paddingBottom: 15}}>
-                <Col span={4}>      
-                    <Avatar size="large" icon="user" />
-                </Col>
-                <Col span={13}>
-                    <Text strong>Bepop</Text> <br/>
-                    <Text type="secondary">Volvo intellisafe</Text>
-                </Col>
-                <Col span={7} style={{textAlign: 'right'}}>
-                    <Text strong>$6,432</Text> <br/>
-                    <Text type="secondary">1,232 miles</Text>
-                </Col>
+            <Chart height={300} data={dv} forceFit padding={[20, 120, 60, 60]}>
+          <Axis name="月份" />
+          <Axis name="月均降雨量" />
+          <Legend />
+          <Tooltip
+            crosshairs={{
+              type: "y"
+            }}
+          />
+          <Geom
+            type="interval"
+            position="月份*月均降雨量"
+            color={"name"}
+            adjust={[
+              {
+                type: "dodge",
+                marginRatio: 0,
+              }
+            ]}   
+            size={5}
+        
+          />
+        </Chart> 
             </Row>
         </Card>
     
     )
 }
-export default TopDriver;
+export default TypeTrips;
