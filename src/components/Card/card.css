@@ -12,3 +12,10 @@
 .check-rem {
     padding-top: 5px
 }
+
+.card-map .ant-card-body{
+    /* height: 400px; */
+    padding-bottom: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}

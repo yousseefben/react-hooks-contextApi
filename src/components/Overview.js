@@ -8,6 +8,9 @@ import './overview.css'
 import TopDriver from './Card/TopDriverCard';
 import TypeTrips from './Card/TypeTrips';
 import ServiceReminder from './Card/ServiceReminder';
+import { SourceMapConsumer } from '../../../../../Library/Caches/typescript/3.3/node_modules/source-map/source-map';
+import SimpleMapPage from './Maps/MapsOverview';
+import MapsOverviewCard from './Card/MapOverviewCard';
 
 const { Text } = Typography;
 
@@ -16,7 +19,7 @@ class Overview extends Component {
 
     render() {
         return (
-            <div style={{marginTop: 40}}>
+            <div style={{marginTop: 40, marginBottom: 40}}>
             <Row>
               <Col span={9} offset={1}>
                 <Card>
@@ -33,7 +36,6 @@ class Overview extends Component {
                             </Row>
                         </Col>
                     </Row>
-                    
                 </Card>
                 <Row style={{marginTop: 30}}>
                     <Col span={11}>
@@ -64,6 +66,7 @@ class Overview extends Component {
                     </Col>
                 </Row>
               </Col>
+           
               <Col span={12} offset={1}>
                 <Card className="dataset-card">
                     <Text style={{fontSize: 22, lineHeight:1.1, fontWeight: '300'}}> Today's Trips</Text>
@@ -73,6 +76,11 @@ class Overview extends Component {
                 </Card>
                 
               </Col>
+            </Row>
+            <Row style={{marginTop: 30}}>
+                <Col span={22} offset={1}>
+                   <MapsOverviewCard />
+                </Col>
             </Row>
             <Row style={{marginTop: 30}}>
                 <Col span={7} offset={1}>
@@ -85,8 +93,7 @@ class Overview extends Component {
                     <ServiceReminder />
                 </Col>
             </Row>
-
-            </div>
+        </div>
         )
     }
 }
