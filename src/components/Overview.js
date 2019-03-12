@@ -3,13 +3,13 @@ import './overview.css';
 import { Card, Col, Icon, Row, Typography } from 'antd';
 import React, { Component } from 'react';
 
-import MapsOverviewCard from './Card/MapOverviewCard';
 import ServiceReminder from './Card/ServiceReminder';
 import TopDriver from './Card/TopDriverCard';
 import TypeTrips from './Card/TypeTrips';
 import Series from './Chart/DataSet';
 import GaugeTick from './Chart/Gauge';
 import InfoCard from './Card/InfoOverviewCard';
+import MapOver from './Card/MapOver';
 
 const { Text } = Typography;
 
@@ -41,17 +41,7 @@ class Overview extends Component {
                            <InfoCard title="VEHICLES ON TRACK" nombre="-7.6" stats="1,428 cars"/>
                     </Col>
                     <Col span={11} offset={2}>
-                         <Card>
-                               <Row>
-                                <Text type="secondary"> DISTANCE DRIVEN</Text>
-                               </Row>
-                               <Row style={{marginTop: 16}}>
-                                <Text style={{fontSize: 29, lineHeight:1.1, fontWeight: '300'}}>158.3 mi</Text>
-                               </Row>
-                               <Row style={{paddingBottom: 16, marginTop: 10}}>
-                                <Text style={{fontSize: 24, color: "#52c41a"}} ><Icon type="rise" /> +2.4%</Text>
-                               </Row>
-                           </Card>
+                        <InfoCard title="DISTANCE DRIVEN" nombre="2.4" stats="158.3 mi"/>
                     </Col>
                 </Row>
               </Col>
@@ -68,7 +58,7 @@ class Overview extends Component {
             </Row>
             <Row style={{marginTop: 30}}>
                 <Col span={22} offset={1}>
-                   <MapsOverviewCard />
+                   <MapOver />
                 </Col>
             </Row>
             <Row style={{marginTop: 30}}>

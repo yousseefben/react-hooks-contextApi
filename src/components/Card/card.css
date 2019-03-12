@@ -14,7 +14,6 @@
 }
 
 .card-map .ant-card-body{
-    /* height: 400px; */
     padding-bottom: 0 !important;
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -46,4 +45,8 @@
 
 .due {
     padding: 0 !important
+}
+
+.name {
+    font-weight: 500;
 }

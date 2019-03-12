@@ -43,7 +43,7 @@ const TypeTrips = (props) =>{
     return (
         <Card style={{paddingBottom: 10}}>
             <Row style={{paddingBottom: 25}}>
-                <Text type="secondary">Trips By Types</Text>
+                <Text type="secondary">TRIPS BY TYPES</Text>
             </Row>
             <Row style={{paddingBottom: 15}}>
             <Chart height={312} data={dv} forceFit padding={[20, 80, 60, 30]}>
