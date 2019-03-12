@@ -9,6 +9,7 @@ import TopDriver from './Card/TopDriverCard';
 import TypeTrips from './Card/TypeTrips';
 import Series from './Chart/DataSet';
 import GaugeTick from './Chart/Gauge';
+import InfoCard from './Card/InfoOverviewCard';
 
 const { Text } = Typography;
 
@@ -37,17 +38,7 @@ class Overview extends Component {
                 </Card>
                 <Row style={{marginTop: 30}}>
                     <Col span={11}>
-                           <Card>
-                               <Row>
-                                <Text type="secondary"> VEHICLES ON TRACK</Text>
-                               </Row>
-                               <Row style={{marginTop: 16}}>
-                                <Text style={{fontSize: 29, lineHeight:1.1, fontWeight: '300'}}>1,428 cars</Text>
-                               </Row>
-                               <Row style={{paddingBottom: 16, marginTop: 10}}>
-                                <Text style={{fontSize: 24}} type="danger"><Icon type="fall" /> -7.6%</Text>
-                               </Row>
-                           </Card>
+                           <InfoCard title="VEHICLES ON TRACK" nombre="-7.6" stats="1,428 cars"/>
                     </Col>
                     <Col span={11} offset={2}>
                          <Card>

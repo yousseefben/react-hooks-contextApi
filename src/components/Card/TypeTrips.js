@@ -1,22 +1,8 @@
+import DataSet from '@antv/data-set';
+import { Card, Row, Typography } from 'antd';
+import { Axis, Chart, Geom, Legend, Tooltip } from 'bizcharts';
 import React from 'react';
-import { Col, Row, Card, Avatar } from 'antd';
-import { Typography } from 'antd';
-import {
-    G2,
-    Chart,
-    Geom,
-    Axis,
-    Tooltip,
-    Coord,
-    Label,
-    Legend,
-    View,
-    Guide,
-    Shape,
-    Facet,
-    Util
-  } from "bizcharts";
-import DataSet from "@antv/data-set";
+import './card.css'
 const { Text } = Typography;
   const data = [
     {
@@ -60,7 +46,7 @@ const TypeTrips = (props) =>{
                 <Text type="secondary">Trips By Types</Text>
             </Row>
             <Row style={{paddingBottom: 15}}>
-            <Chart height={300} data={dv} forceFit padding={[20, 120, 60, 60]}>
+            <Chart height={312} data={dv} forceFit padding={[20, 80, 60, 30]}>
           <Axis name="月份" />
           <Axis name="月均降雨量" />
           <Legend />

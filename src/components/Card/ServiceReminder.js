@@ -2,15 +2,20 @@ import './card.css';
 
 import { Card, Checkbox, Row, Typography } from 'antd';
 import React from 'react';
+import { className } from 'postcss-selector-parser';
 
 const { Text } = Typography;
 
 const ServiceReminder = (props) =>{
 
     return (
-        <Card style={{paddingBottom: 27}}>
+        <Card style={{paddingBottom: 20}} className="service-card">
             <Row style={{paddingBottom: 25}}>
                 <Text type="secondary">Service Reminders</Text>
+            </Row>
+            <Row style={{paddingBottom: 15}}>
+                <Checkbox className="check-rem">Vehicle <strong>#11183</strong></Checkbox>
+                <Text code className="due">DUE TODAY</Text>
             </Row>
             <Row style={{paddingBottom: 15}}>
                 <Checkbox className="check-rem">Vehicle <strong>#11183</strong></Checkbox>

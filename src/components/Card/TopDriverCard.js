@@ -15,80 +15,81 @@ const TopDriver = (props) =>{
                 <Col span={4}>      
                     <Avatar size="large" icon="user" />
                 </Col>
-                <Col span={13}>
+                <Col span={12}>
                     <Text strong>Bepop</Text> <br/>
                     <Text type="secondary">Volvo intellisafe</Text>
                 </Col>
-                <Col span={7} style={{textAlign: 'right'}}>
+                <Col span={8} style={{textAlign: 'right'}}>
                     <Text strong>$6,432</Text> <br/>
-                    <Text type="secondary">1,232 miles</Text>
+                    <Text type="secondary">1,232 mi</Text>
                 </Col>
             </Row>
             <Row style={{paddingBottom: 15}}>
                 <Col span={4}>      
                     <Avatar size="large" icon="user" />
                 </Col>
-                <Col span={13}>
+                <Col span={12}>
                     <Text strong>Bepop</Text> <br/>
                     <Text type="secondary">Volvo intellisafe</Text>
                 </Col>
-                <Col span={7} style={{textAlign: 'right'}}>
+                <Col span={8} style={{textAlign: 'right'}}>
                     <Text strong>$6,432</Text> <br/>
-                    <Text type="secondary">1,232 miles</Text>
+                    <Text type="secondary">1,232 mi</Text>
                 </Col>
             </Row>
             <Row style={{paddingBottom: 15}}>
                 <Col span={4}>      
                     <Avatar size="large" icon="user" />
                 </Col>
-                <Col span={13}>
+                <Col span={12}>
                     <Text strong>Bepop</Text> <br/>
                     <Text type="secondary">Volvo intellisafe</Text>
                 </Col>
-                <Col span={7} style={{textAlign: 'right'}}>
+                <Col span={8} style={{textAlign: 'right'}}>
                     <Text strong>$6,432</Text> <br/>
-                    <Text type="secondary">1,232 miles</Text>
+                    <Text type="secondary">1,232 mi</Text>
                 </Col>
             </Row>
             <Row style={{paddingBottom: 15}}>
                 <Col span={4}>      
                     <Avatar size="large" icon="user" />
                 </Col>
-                <Col span={13}>
+                <Col span={12}>
                     <Text strong>Bepop</Text> <br/>
                     <Text type="secondary">Volvo intellisafe</Text>
                 </Col>
-                <Col span={7} style={{textAlign: 'right'}}>
+                <Col span={8} style={{textAlign: 'right'}}>
                     <Text strong>$6,432</Text> <br/>
-                    <Text type="secondary">1,232 miles</Text>
+                    <Text type="secondary">1,232 mi</Text>
                 </Col>
             </Row>
             <Row style={{paddingBottom: 15}}>
                 <Col span={4}>      
                     <Avatar size="large" icon="user" />
                 </Col>
-                <Col span={13}>
+                <Col span={12}>
                     <Text strong>Bepop</Text> <br/>
                     <Text type="secondary">Volvo intellisafe</Text>
                 </Col>
-                <Col span={7} style={{textAlign: 'right'}}>
+                <Col span={8} style={{textAlign: 'right'}}>
                     <Text strong>$6,432</Text> <br/>
-                    <Text type="secondary">1,232 miles</Text>
+                    <Text type="secondary">1,232 mi</Text>
                 </Col>
             </Row>
             <Row style={{paddingBottom: 15}}>
                 <Col span={4}>      
                     <Avatar size="large" icon="user" />
                 </Col>
-                <Col span={13}>
+                <Col span={12}>
                     <Text strong>Bepop</Text> <br/>
                     <Text type="secondary">Volvo intellisafe</Text>
                 </Col>
-                <Col span={7} style={{textAlign: 'right'}}>
+                <Col span={8} style={{textAlign: 'right'}}>
                     <Text strong>$6,432</Text> <br/>
-                    <Text type="secondary">1,232 miles</Text>
+                    <Text type="secondary">1,232 mi</Text>
                 </Col>
             </Row>
+            
             
         </Card>
     
