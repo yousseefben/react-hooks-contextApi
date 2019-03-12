@@ -84,7 +84,7 @@ class Overview extends Component {
                 <Col span={7} offset={1}>
                     <TopDriver />
                 </Col>
-                <Col span={7} offset={1}>
+                <Col span={6} offset={1}>
                     <TypeTrips />
                 </Col>
                 <Col span={7} offset={1}>
