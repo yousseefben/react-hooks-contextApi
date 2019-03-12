@@ -30,3 +30,22 @@
     color: #1890ff;
   }
   
+  .card-user .ant-card-body {
+
+      padding: 0 !important
+  }
+
+  .pop .ant-popover-content .ant-popover-inner .ant-popover-inner-content{
+
+    padding: 0 !important
+}
+
+.custom-btn {
+    border: none !important;
+    width: 100% !important;
+
+}
+
+.ant-divider {
+    margin: 2px !important
+}
