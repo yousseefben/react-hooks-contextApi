@@ -1,6 +1,5 @@
+import { Avatar, Card, Col, Row, Typography } from 'antd';
 import React from 'react';
-import { Col, Row, Card, Avatar } from 'antd';
-import { Typography } from 'antd';
 
 
 const { Text } = Typography;

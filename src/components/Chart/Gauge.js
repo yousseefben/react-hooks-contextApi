@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
-import { Chart, Axis, Coord, Geom, Guide, View } from 'bizcharts';
-import { width } from 'window-size';
-
 import './chart.css';
+
+import { Axis, Chart, Coord, Geom, Guide, View } from 'bizcharts';
+import React, { Component } from 'react';
 
 const { Text } = Guide;
 

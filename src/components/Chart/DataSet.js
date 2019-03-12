@@ -1,20 +1,6 @@
-import React from "react";
-import {
-  G2,
-  Chart,
-  Geom,
-  Axis,
-  Tooltip,
-  Coord,
-  Label,
-  Legend,
-  View,
-  Guide,
-  Shape,
-  Facet,
-  Util
-} from "bizcharts";
-import DataSet from "@antv/data-set";
+import DataSet from '@antv/data-set';
+import { Axis, Chart, Geom, Legend, Tooltip } from 'bizcharts';
+import React from 'react';
 
 class Series extends React.Component {
   render() {

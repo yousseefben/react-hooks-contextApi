@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import {
-  Layout
-} from 'antd';
 import './header.css';
+
+import { Layout } from 'antd';
+import React, { Component } from 'react';
+
 import HeaderContent from './Header';
 import SiderDemo from './Sidebar';
 

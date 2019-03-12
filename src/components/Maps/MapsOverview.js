@@ -1,8 +1,8 @@
-
-import React, {PropTypes, Component} from 'react';
-
 import GoogleMap from 'google-map-react';
+import React, { Component, PropTypes } from 'react';
+
 import Marker from './Marker';
+
 
 // import MyGreatPlace from './my_great_place.jsx';
 const AnyReactComponent = ({ text }) => <div>{text}</div>;

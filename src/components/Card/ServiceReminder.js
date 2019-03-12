@@ -1,7 +1,7 @@
+import './card.css';
+
+import { Card, Checkbox, Row, Typography } from 'antd';
 import React from 'react';
-import { Col, Row, Card, Avatar, Checkbox } from 'antd';
-import { Typography } from 'antd';
-import './card.css'
 
 const { Text } = Typography;
 

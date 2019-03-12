@@ -1,16 +1,14 @@
+import './overview.css';
+
+import { Card, Col, Icon, Row, Typography } from 'antd';
 import React, { Component } from 'react';
-import { Col, Row, Card, Icon } from 'antd';
-import { Typography } from 'antd';
-import GaugeTick from './Chart/Gauge';
-import DataSet from './Chart/DataSet';
-import Series from './Chart/DataSet';
-import './overview.css'
+
+import MapsOverviewCard from './Card/MapOverviewCard';
+import ServiceReminder from './Card/ServiceReminder';
 import TopDriver from './Card/TopDriverCard';
 import TypeTrips from './Card/TypeTrips';
-import ServiceReminder from './Card/ServiceReminder';
-import { SourceMapConsumer } from '../../../../../Library/Caches/typescript/3.3/node_modules/source-map/source-map';
-import SimpleMapPage from './Maps/MapsOverview';
-import MapsOverviewCard from './Card/MapOverviewCard';
+import Series from './Chart/DataSet';
+import GaugeTick from './Chart/Gauge';
 
 const { Text } = Typography;
 

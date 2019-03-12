@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
-import {
-  Layout, Menu, Breadcrumb, Icon,
-} from 'antd';
 import './header.css';
-import { FaRegMap } from "react-icons/fa";
+
+import { Icon, Layout, Menu } from 'antd';
+import React, { Component } from 'react';
+import { FaRegMap } from 'react-icons/fa';
 
 const {
   Sider,
 } = Layout;
-const SubMenu = Menu.SubMenu;
 
-class SiderDemo extends React.Component {
+class SiderDemo extends Component {
     state = {
         collapsed: false,
       };

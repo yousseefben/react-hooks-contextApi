@@ -1,8 +1,9 @@
+import './card.css';
+
+import { Card, Row, Typography } from 'antd';
 import React from 'react';
-import { Col, Row, Card, Avatar } from 'antd';
-import { Typography } from 'antd';
+
 import SimpleMapPage from '../Maps/MapsOverview';
-import './card.css'
 
 
 const { Text } = Typography;
