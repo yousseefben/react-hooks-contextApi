@@ -2,7 +2,6 @@ import './card.css';
 
 import { Card, Checkbox, Row, Typography } from 'antd';
 import React from 'react';
-import { className } from 'postcss-selector-parser';
 
 const { Text } = Typography;
 

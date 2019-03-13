@@ -12,13 +12,14 @@ const {
 
 class MyLayout extends Component {
 
+  
   render() {
     const { children } = this.props;
     return (
         <Layout style={{ minHeight: '100vh', background: '#fff' }} children={children}>
-           <SiderDemo/>
+           <SiderDemo />
 
-            <Layout>
+            <Layout >
                 <Header style={{ background: '#fff', padding: 0 }}>
                     <HeaderContent />
                 </Header>

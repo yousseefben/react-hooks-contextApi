@@ -26,18 +26,18 @@
     padding-top: 10px;
   }
   
-  .sider .trigger:hover {
-    color: #1890ff;
-  }
-  
-  .card-user .ant-card-body {
+.sider .trigger:hover {
+color: #1890ff;
+}
 
-      padding: 0 !important
-  }
-
-  .pop .ant-popover-content .ant-popover-inner .ant-popover-inner-content{
+.card-user .ant-card-body {
 
     padding: 0 !important
+}
+
+.pop .ant-popover-content .ant-popover-inner .ant-popover-inner-content{
+
+padding: 0 !important
 }
 
 .custom-btn {

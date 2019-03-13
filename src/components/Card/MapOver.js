@@ -3,9 +3,6 @@ import * as React from 'react';
 import ReactMapboxGl, { Feature, Layer } from 'react-mapbox-gl';
 
   
-  // tslint:disable-next-line:no-var-requires
-  // const { token, styles } = require('./config.json');
-  // tslint:disable-next-line:no-var-requires
   const Mapbox = ReactMapboxGl({
     accessToken: "pk.eyJ1IjoieW91c3NlZmJlbiIsImEiOiJjanQ1cXAwaTAwMmt4NGFuenkxcWJnbTYwIn0.r-38m6OcNK3xK-pmwzhL8w"
   });

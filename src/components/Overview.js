@@ -1,15 +1,15 @@
 import './overview.css';
 
-import { Card, Col, Icon, Row, Typography } from 'antd';
+import { Card, Col, Row, Typography } from 'antd';
 import React, { Component } from 'react';
 
+import InfoCard from './Card/InfoOverviewCard';
+import MapOver from './Card/MapOver';
 import ServiceReminder from './Card/ServiceReminder';
 import TopDriver from './Card/TopDriverCard';
 import TypeTrips from './Card/TypeTrips';
 import Series from './Chart/DataSet';
 import GaugeTick from './Chart/Gauge';
-import InfoCard from './Card/InfoOverviewCard';
-import MapOver from './Card/MapOver';
 
 const { Text } = Typography;
 

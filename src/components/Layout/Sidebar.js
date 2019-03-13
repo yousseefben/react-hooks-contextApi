@@ -23,6 +23,7 @@ class SiderDemo extends Component {
           alert(key.key + key.link);
       }
 
+
   render() {
     return (
         <Sider

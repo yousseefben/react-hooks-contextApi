@@ -1,13 +1,10 @@
 import './header.css';
-import { IoIosLogOut } from "react-icons/io";
 
-import { Avatar, Badge, Button, Card, Icon, Layout, Menu, Popover, Divider } from 'antd';
+import { Avatar, Badge, Button, Card, Divider, Icon, Menu, Popover } from 'antd';
 import React, { Component } from 'react';
+import { IoIosLogOut } from 'react-icons/io';
 
-const {
-    Header
-  } = Layout;
-  const {Meta} = Card
+const {Meta} = Card
   
   const NotificationContent = () => {
       return (
@@ -51,11 +48,11 @@ class HeaderContent extends Component {
     };
     
     handleVisibleChange = (visible) => {
-        this.setState({ ['propover_visible']: !this.state.propover_visible });
+        this.setState({ "propover_visible": !this.state.propover_visible });
       }
     
     handleVisibleAvatarChange = (visible) => {
-        this.setState({ ['avatar_visible']: !this.state.avatar_visible });
+        this.setState({ "avatar_visible": !this.state.avatar_visible });
       }
     
 
