@@ -1,39 +1,46 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import MyLayout from './components/Layout/MyLayout';
-import LayoutRoute from './components/Layout/LayoutRoute';
-import { BrowserRouter, Redirect, Switch } from 'react-router-dom';
-import Overview from './components/Overview';
-import EmptyLayout from './components/Layout/EmptyLayout';
+import {BrowserRouter, Redirect, Switch} from 'react-router-dom';
 import LoginPage from './components/login/LoginPage';
 
 const getBasename = () => {
-  return `/${process.env.PUBLIC_URL.split('/').pop()}`;
+    return `/${process.env.PUBLIC_URL.split('/').pop()}`;
 };
 
-class App extends Component {
-  render() {
-    return (
-      <BrowserRouter basename={getBasename()}>
-          <Switch>
-            <LayoutRoute
-              exact
-              path="/"
-              layout={MyLayout}
-              component={Overview}
-            />
-            <LayoutRoute
-              exact
-              path="/login"
-              layout={EmptyLayout}
-              component={LoginPage}
-            />
-            <Redirect to="/" />
-          </Switch>
-      </BrowserRouter>
-    );
-  }
-}
+const HomePage = React.lazy(() => import('./components/Episodes/Home'));
+const MyLayout = React.lazy(() => import('./components/Layout/MyLayout'));
+const LayoutRoute = React.lazy(() => import('./components/Layout/LayoutRoute'));
+const EmptyLayout = React.lazy(() => import('./components/Layout/EmptyLayout'));
 
-export default (App);
+
+const App = () => {
+
+
+    return (
+        <React.Suspense fallback={<div>Loading...</div>}>
+
+            <BrowserRouter basename={getBasename()}>
+                <Switch>
+
+                    <LayoutRoute
+                        exact
+                        path="/"
+                        layout={MyLayout}
+                        component={HomePage}
+                    />
+                    <LayoutRoute
+                        exact
+                        path="/login"
+                        layout={EmptyLayout}
+                        component={LoginPage}
+                    />
+                    <Redirect to="/"/>
+                </Switch>
+            </BrowserRouter>
+        </React.Suspense>
+
+    );
+};
+
+export default App;
 

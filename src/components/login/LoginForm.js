@@ -1,7 +1,5 @@
-import {
-    Form, Icon, Input, Button, Checkbox,
-  } from 'antd';
-import React, { Component } from 'react';
+import {Button, Checkbox, Form, Icon, Input,} from 'antd';
+import React, {Component} from 'react';
 import './login.css'
 
 class MyLoginForm extends Component {
@@ -12,8 +10,8 @@ class MyLoginForm extends Component {
           console.log('Received values of form: ', values);
         }
       });
-    }
-  
+    };
+
     render() {
       const { getFieldDecorator } = this.props.form;
       return (

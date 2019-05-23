@@ -1,25 +1,23 @@
 import './header.css';
 
-import { Layout } from 'antd';
-import React, { Component } from 'react';
+import {Layout} from 'antd';
+import React from 'react';
 
 
 const {
-  Content
+    Content
 } = Layout;
 
-class EmptyLayout extends Component {
+const EmptyLayout = (props) => {
 
-  render() {
-    const { children } = this.props;
+    const {children} = props;
     return (
-        <Layout style={{ minHeight: '100vh', background: '#fff' }} children={children}>
-           <Content>
-               {children}
-           </Content>
+        <Layout style={{minHeight: '100vh', background: '#fff'}} children={children}>
+            <Content>
+                {children}
+            </Content>
         </Layout>
 
     );
-  }
-}
+};
 export default EmptyLayout;

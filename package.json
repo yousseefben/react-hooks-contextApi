@@ -6,17 +6,13 @@
     "@antv/data-set": "^0.10.2",
     "antd": "^3.15.0",
     "babel-plugin-import": "^1.11.0",
-    "bizcharts": "^3.4.3",
     "customize-cra": "^0.2.12",
-    "google-map-react": "^1.1.2",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
-    "mapbox-gl": "^0.53.1",
     "react": "^16.8.4",
     "react-app-rewired": "^2.1.0",
     "react-dom": "^16.8.4",
     "react-icons": "^3.5.0",
-    "react-mapbox-gl": "^4.2.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.8"
@@ -24,7 +20,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "`react-app-rewired test",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,5 +31,11 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "nock": "^10.0.6",
+    "react-hooks-testing-library": "^0.5.0",
+    "react-test-renderer": "^16.8.6",
+    "react-testing-library": "^7.0.1"
+  }
 }
